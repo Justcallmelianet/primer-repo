@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class eDrawCards : MonoBehaviour
+public class PDrawCards : MonoBehaviour
 {
     public GameObject Card1;
     public GameObject Card2;
@@ -48,7 +48,7 @@ public class eDrawCards : MonoBehaviour
         {
             GameObject card = Instantiate(Mazo[Random.Range(0,Mazo.Count)], new Vector2(0,0), Quaternion.identity);
             card.transform.SetParent(Hand.transform, false);
-           // Mazo.RemoveAt(0);
+            Mazo.RemoveAt(0);
         }
     }
 
@@ -114,3 +114,4 @@ public class eDrawCards : MonoBehaviour
         
     }
 }
+
