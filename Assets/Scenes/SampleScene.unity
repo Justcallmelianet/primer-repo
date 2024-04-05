@@ -2347,7 +2347,37 @@ MonoBehaviour:
   Card29: {fileID: 8891574890102327415, guid: 821e86923e5cf974e8e9a0562c568655, type: 3}
   Card30: {fileID: 7886025473843472350, guid: 5651afa6701987347bb405cebf9e5a5c, type: 3}
   Hand: {fileID: 4640591801909705808}
-  Mazo: []
+  Mazo:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!224 &6690151016664280221
 RectTransform:
   m_ObjectHideFlags: 0

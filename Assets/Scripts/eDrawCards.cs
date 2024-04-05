@@ -95,18 +95,26 @@ public class eDrawCards : MonoBehaviour
     }
 
 
-    //public static void Shuffle(List<GameObject> baraja) //metodo pra barajear las cartas del mazo 
-    //{
-      //   var n = baraja.Count;
-       //  var rnd = new Random();
-        //for( int i = n - 1; i>0; i--)
-        //{
-           // var j = rnd.Next(0,i);
-            //var temp = baraja[i];
-            //baraja[i] = baraja[j];
-            //baraja[j] = temp;
-         //}
-     //}
+    //using System.Collections.Generic;
+
+
+public static void Shuffle(List<GameObject> baraja, int numToShuffle)
+{
+    System.Random rnd = new System.Random(); // Instancia de Random
+    int n = baraja.Count;
+    while (n > 1)
+    {
+        n--;
+        int i = rnd.Next(n + 1);
+        GameObject temp = baraja[i];
+        baraja[i] = baraja[30];
+        baraja[30] = temp;
+
+        // Si necesitas interrumpir el bucle bajo alguna condición, puedes usar un break.
+        // Por ejemplo, si solo quieres barajar un número específico de cartas, podrías hacer:
+        if (30 == baraja.Count - numToShuffle) break;
+    }
+}
 
     // Update is called once per frame
     void Update()
