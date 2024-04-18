@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2828632353793425104}
   - component: {fileID: 6112798080047242971}
   - component: {fileID: 9021565595358458657}
+  - component: {fileID: 5158447939996183591}
+  - component: {fileID: 8267234603469362277}
   m_Layer: 0
   m_Name: Agnus
   m_TagString: Untagged
@@ -75,3 +77,55 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5158447939996183591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517025101321219643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 926fc766aba4daf4d8e7aad0c150df0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Power: 0
+  DescriptionEffects: 
+  Faction: 
+  Type: 
+  Frange: 0
+  Affected: 0
+  Repartir: 0
+  Sumar: 0
+--- !u!114 &8267234603469362277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517025101321219643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd22111ac83c5c342bee515906e033ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Card: {fileID: 1517025101321219643}
+  Turn: 1
+  jugable: 1
+  PHand: {fileID: 0}
+  EHand: {fileID: 0}
+  PMelee: {fileID: 0}
+  PDistance: {fileID: 0}
+  PSiege: {fileID: 0}
+  EMelee: {fileID: 0}
+  EDistance: {fileID: 0}
+  ESiege: {fileID: 0}
+  pCmelee: {fileID: 0}
+  pCdistance: {fileID: 0}
+  pCsiege: {fileID: 0}
+  eCmelee: {fileID: 0}
+  eCdistance: {fileID: 0}
+  eCsiege: {fileID: 0}
+  Bloqueo1: {fileID: 0}
+  Bloqueo2: {fileID: 0}

@@ -38,19 +38,34 @@ public class PDrawCards : MonoBehaviour
     
 
     public GameObject Hand;
+    public GameObject PlayerHand;
+    public List<GameObject> mazo = new List<GameObject>(); // Lista de prefabs de cartas en el mazo
+    public List<GameObject> hand = new List<GameObject>(); // Lista de prefabs de cartas en la mano
 
-    public List <GameObject> Mazo = new List <GameObject>();
+public void Clicked()
+{
+    // Referencia al objeto "Mano" en el juego
 
-
-    public void Clicked()
+    for(int i = 0; i < 10; i++)
     {
-        for (int i= 0; i<10; i ++)
+        if(mazo.Count > 0)
         {
-            GameObject card = Instantiate(Mazo[Random.Range(0,Mazo.Count)], new Vector2(0,0), Quaternion.identity);
-            card.transform.SetParent(Hand.transform, false);
-            Mazo.RemoveAt(0);
+            int cartaIndex = Random.Range(0, mazo.Count);
+            GameObject cartaPrefab = mazo[cartaIndex];
+
+            GameObject carta = Instantiate(cartaPrefab,new Vector2(0,0), Quaternion.identity);
+            carta.transform.SetParent(Hand.transform, false); // Establecer el objeto carta como hijo de "Mano"
+            hand.Add(cartaPrefab);
+
+            mazo.RemoveAt(cartaIndex);
+        }
+        else
+        {
+            Debug.Log("El mazo está vacío.");
         }
     }
+}
+
 
 
 
@@ -58,60 +73,47 @@ public class PDrawCards : MonoBehaviour
     void Start()
     {
         
-        Mazo.Add(Card1);
-        Mazo.Add(Card2);
-        Mazo.Add(Card3);
-        Mazo.Add(Card4);
-        Mazo.Add(Card5);
-        Mazo.Add(Card6);
-        Mazo.Add(Card7);
-        Mazo.Add(Card8);
-        Mazo.Add(Card9);
-        Mazo.Add(Card10);
-        Mazo.Add(Card11);
-        Mazo.Add(Card12);
-        Mazo.Add(Card13);
-        Mazo.Add(Card14);
-        Mazo.Add(Card15);
-        Mazo.Add(Card16);
-        Mazo.Add(Card17);
-        Mazo.Add(Card18);
-        Mazo.Add(Card19);
-        Mazo.Add(Card20);
-        Mazo.Add(Card21);
-        Mazo.Add(Card22);
-        Mazo.Add(Card23);
-        Mazo.Add(Card24);
-        Mazo.Add(Card25);
-        Mazo.Add(Card26);
-        Mazo.Add(Card27);
-        Mazo.Add(Card28);
-        Mazo.Add(Card29);
-        Mazo.Add(Card30);
-       
+        mazo.Add(Card1);
+        mazo.Add(Card2);
+        mazo.Add(Card3);
+        mazo.Add(Card4);
+        mazo.Add(Card5);
+        mazo.Add(Card6);
+        mazo.Add(Card7);
+        mazo.Add(Card8);
+        mazo.Add(Card9);
+        mazo.Add(Card10);
+        mazo.Add(Card11);
+        mazo.Add(Card12);
+        mazo.Add(Card13);
+        mazo.Add(Card14);
+        mazo.Add(Card15);
+        mazo.Add(Card16);
+        mazo.Add(Card17);
+        mazo.Add(Card18);
+        mazo.Add(Card19);
+        mazo.Add(Card20);
+        mazo.Add(Card21);
+        mazo.Add(Card22);
+        mazo.Add(Card23);
+        mazo.Add(Card24);
+        mazo.Add(Card25);
+        mazo.Add(Card26);
+        mazo.Add(Card27);
+        mazo.Add(Card28);
+        mazo.Add(Card29);
+        mazo.Add(Card30);
 
-        // Shuffle(Mazo); //las barajeo desde el principio
        
     }
+     
 
-
-    //public static void Shuffle(List<GameObject> baraja) //metodo pra barajear las cartas del mazo 
-    //{
-      //   var n = baraja.Count;
-       //  var rnd = new Random();
-        //for( int i = n - 1; i>0; i--)
-        //{
-           // var j = rnd.Next(0,i);
-            //var temp = baraja[i];
-            //baraja[i] = baraja[j];
-            //baraja[j] = temp;
-         //}
-     //}
+        
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
 

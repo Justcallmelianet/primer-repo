@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8035779384557935472}
   - component: {fileID: 2591138275318448128}
   - component: {fileID: 5913612226004548203}
+  - component: {fileID: 8329802315463762393}
   m_Layer: 0
   m_Name: Lirtud
   m_TagString: Untagged
@@ -75,3 +76,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8329802315463762393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8066199360224006919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 926fc766aba4daf4d8e7aad0c150df0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Power: 0
+  DescriptionNskill: 
+  Faction: 
+  Type: plata
+  Frange: 2
+  Affected: si
