@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 5158447939996183591}
   - component: {fileID: 8267234603469362277}
   - component: {fileID: 2736760852179222458}
+  - component: {fileID: 2053372292763725653}
+  - component: {fileID: 4894789860679777043}
   m_Layer: 0
   m_Name: Agnus
   m_TagString: Untagged
@@ -90,13 +92,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 926fc766aba4daf4d8e7aad0c150df0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Agnus
   Power: 0
   DescriptionEffects: 
-  Faction: 
-  Type: 
+  Faction: Dragons
+  Type: "Se\xF1uelo"
   Frange: 3
-  TipoFranja: 
+  TipoFranja: Asedio
   Affected: 0
   Repartir: 0
   Sumar: 0
@@ -187,3 +189,62 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2053372292763725653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517025101321219643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da9eead1751715428e4eeee56ba7ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Card: {fileID: 1517025101321219643}
+  InfoText: {fileID: 2841193769435030613, guid: 81c30821ef613a148bde144caf518577, type: 3}
+--- !u!114 &4894789860679777043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517025101321219643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2053372292763725653}
+          m_TargetAssemblyTypeName: CardInfo, Assembly-CSharp
+          m_MethodName: MouseEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2053372292763725653}
+          m_TargetAssemblyTypeName: CardInfo, Assembly-CSharp
+          m_MethodName: MouseExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

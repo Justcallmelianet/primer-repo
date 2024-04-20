@@ -17,7 +17,7 @@ public class CardInfo : MonoBehaviour
     
     public void MouseEnter()
     {
-        InfoText.text = Card.GetComponent<ClaseCarta>().Name + ". PODER: " + Card.GetComponent<ClaseCarta>().Power.ToString() + ". TIPO: " + Card.GetComponent<ClaseCarta>(). Type + ". DESCRIPCIÓN: " + Card.GetComponent<ClaseCarta>(). DescriptionEffects + ". FRANJA: " + Card.GetComponent<ClaseCarta>().TipoFranja + ". FACCIÓN: " + Card.GetComponent<ClaseCarta>().Faction;
+        InfoText.text = Card.GetComponent<ClaseCarta>().Name + " PODER: " + Card.GetComponent<ClaseCarta>().Power.ToString() + " TIPO: " + Card.GetComponent<ClaseCarta>(). Type + " DESCRIPCIÓN: " + Card.GetComponent<ClaseCarta>(). DescriptionEffects + " FRANJA: " + Card.GetComponent<ClaseCarta>().TipoFranja + " FACCIÓN: " + Card.GetComponent<ClaseCarta>().Faction;
         Information = Instantiate(InfoText, new Vector2(0,0), Quaternion.identity);
         Information.transform.SetParent(DescriptionText.transform, false);
     }
