@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,13 +13,14 @@ public class ClaseCarta : MonoBehaviour
     public string DescriptionEffects; // campo para guardar la descripcion y explicar el efecto de la carta en caso de que tenga
     public string Faction; //campo para guardar la faccion
     public string Type; //campo para guardar si es de oro o plata
-    public int Frange; // campo para guardar la franja en la que se juega la carta
+    public int Frange;
+    public string TipoFranja; // campo para guardar ek nombre de la franja a la que pertenece
     public bool Affected = false ; //campo para saber si la carta esta siendo afectada por un clima
     public bool Repartir = false; // cod para arreglar el problema del mazo a la hora de repartir cartas 
     public bool Sumar = false;// para saber si ya esta sumada en la franja
 
-    
+    internal void MoverACarta(Vector3 position)
+    {
+        throw new NotImplementedException();
     }
-
-   
-
+}

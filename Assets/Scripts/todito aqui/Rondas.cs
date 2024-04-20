@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Rondas : MonoBehaviour
 {
-        private bool rondaActiva = false;
+        private bool rondaEmpezada = false;
         private bool cartaJugada = false;
 
          public void IniciarRonda(){
-            if (!rondaActiva)
+            if (!rondaEmpezada)
         {
-            rondaActiva = true;
+            rondaEmpezada = true;
             cartaJugada = false;
         }
         else
@@ -24,12 +24,12 @@ public class Rondas : MonoBehaviour
 
    public void JugarCarta()
     {
-        if (rondaActiva && !cartaJugada)
+        if (rondaEmpezada && !cartaJugada)
         {
             Debug.Log("Carta jugada");
             cartaJugada = true;
         }
-        else if (!rondaActiva)
+        else if (!rondaEmpezada)
         {
             Debug.Log("No hay ronda activa para jugar carta");
         }
@@ -39,9 +39,9 @@ public class Rondas : MonoBehaviour
         }
     }
 
-          public void FinalizarRonda()
+          public void TerminarRonda()
     {
-        rondaActiva = false;
+        rondaEmpezada = false;
         cartaJugada = false;
     }
 }

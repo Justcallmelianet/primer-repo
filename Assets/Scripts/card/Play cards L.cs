@@ -313,6 +313,6 @@ public class JugarCarta : MonoBehaviour
     {
       
       mazo = GameObject.Find("PlayerDeck").GetComponent<PDrawCards>().mazo;
-      mazoenemigo = GameObject.Find("EnemyDeck").GetComponent<eDrawCards>().Mazo;
+      mazoenemigo = GameObject.Find("EnemyDeck").GetComponent<eDrawCards>().mazo;
     }
 }

@@ -41,8 +41,11 @@ public class PDrawCards : MonoBehaviour
     public GameObject PlayerHand;
     public List<GameObject> mazo = new List<GameObject>(); // Lista de prefabs de cartas en el mazo
     public List<GameObject> hand = new List<GameObject>(); // Lista de prefabs de cartas en la mano
+    public List<GameObject> cartasJugadas= new List<GameObject>();
 
-public void Clicked()
+    public bool robo { get; internal set; }
+
+    public void Clicked()
 {
     // Referencia al objeto "Mano" en el juego
 
@@ -104,16 +107,37 @@ public void Clicked()
         mazo.Add(Card29);
         mazo.Add(Card30);
 
+        JugarRonda(1, 10);
+        JugarRonda(2, 3);
+        JugarRonda(3, 4);
+        JugarRonda(4, 5);
        
     }
      
+void JugarRonda(int ronda, int cantidad)
+    {
+        Debug.Log("Ronda " + ronda);
 
+        for (int i = 0; i < cantidad; i++)
+        {
+            if (mazo.Count == 0)
+            {
+                Debug.Log("No hay más cartas en el mazo");
+                break;
+            }
+
+            int cartaIndex = Random.Range(0, mazo.Count); // Asegurarse de que el índice esté dentro del rango
+            GameObject cartaJugada = mazo[cartaIndex]; // Obtener la carta
+
+            cartasJugadas.Add(cartaJugada); // Agregar la carta jugada a la lista de cartas jugadas
+            mazo.RemoveAt(cartaIndex); // Eliminar la carta jugada del mazo
+
+            Debug.Log("Carta jugada: " + cartaJugada.name);
+        }
+    }
+}
         
 
     // Update is called once per frame
-    void Update()
-    {
-
-    }
-}
+    
 
