@@ -98,21 +98,7 @@ public class JugarCartal : MonoBehaviour
         }
     }
 
-    public void NlunarGutts()
-    {
-        if (mazo.Count > 2)
-        {
-            VerificarCarta(true);
-        }
-    }
 
-    public void NLunarGriffith()
-    {
-        if (mazoenemigo.Count > 2)
-        {
-            VerificarCarta(false);
-        }
-    }
 
     private void Update()
     {

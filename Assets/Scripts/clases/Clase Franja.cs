@@ -1,14 +1,14 @@
-
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ClaseFranja : MonoBehaviour
 {
     public List<GameObject> CardsinFrange;
-    public int Suma = 0;
+
     public Text puntuationText;
     public string Faction;
     public int franja;
@@ -16,7 +16,12 @@ public class ClaseFranja : MonoBehaviour
     public GameObject CementerioBeasts;
     public GameObject PlayerHand;
     public GameObject EnemyHand;
-    private bool efectogrunbeld;
-    private int sumaparcial;
+
+    public int Suma { get; internal set; }
+
+    void Update()
+    {
+        
+    }
 
 }

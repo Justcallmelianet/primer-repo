@@ -97,7 +97,7 @@ MonoBehaviour:
   DescriptionEffects: 
   Faction: Dragons
   Type: Clima
-  Frange: 3
+  Frange: 6
   TipoFranja: Asedio
   Affected: 0
   Repartir: 0

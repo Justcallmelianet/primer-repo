@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 4001602309026110204}
   - component: {fileID: 1688146674933853230}
   - component: {fileID: 2106989307903724746}
-  - component: {fileID: 841070000471201864}
   - component: {fileID: 1456391048967288176}
+  - component: {fileID: 2088816340167801090}
+  - component: {fileID: 3615407118129784701}
   m_Layer: 0
   m_Name: CharkRock 2
   m_TagString: Untagged
@@ -189,20 +190,6 @@ MonoBehaviour:
   eCsiege: {fileID: 0}
   Bloqueo1: {fileID: 0}
   Bloqueo2: {fileID: 0}
---- !u!114 &841070000471201864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3543205194702323290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8da9eead1751715428e4eeee56ba7ead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Card: {fileID: 3543205194702323290}
-  InfoText: {fileID: 2841193769435030613, guid: 81c30821ef613a148bde144caf518577, type: 3}
 --- !u!114 &1456391048967288176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,8 +207,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 841070000471201864}
-          m_TargetAssemblyTypeName: CardInfo, Assembly-CSharp
+        - m_Target: {fileID: 3615407118129784701}
+          m_TargetAssemblyTypeName: CardInSD, Assembly-CSharp
           m_MethodName: MouseEnter
           m_Mode: 1
           m_Arguments:
@@ -236,8 +223,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 841070000471201864}
-          m_TargetAssemblyTypeName: CardInfo, Assembly-CSharp
+        - m_Target: {fileID: 3615407118129784701}
+          m_TargetAssemblyTypeName: CardInSD, Assembly-CSharp
           m_MethodName: MouseExit
           m_Mode: 1
           m_Arguments:
@@ -248,3 +235,62 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!61 &2088816340167801090
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3543205194702323290}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &3615407118129784701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3543205194702323290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb08b4c2c24c2e40b39d9743e6a199a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Card: {fileID: 3543205194702323290}
+  InfoText: {fileID: 2841193769435030613, guid: 26055fee3de0fe34abb0c761883abc11, type: 3}

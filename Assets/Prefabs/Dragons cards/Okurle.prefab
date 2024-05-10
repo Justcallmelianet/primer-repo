@@ -97,7 +97,7 @@ MonoBehaviour:
   DescriptionEffects: 
   Faction: Dragons
   Type: Clima
-  Frange: 2
+  Frange: 5
   TipoFranja: Distancia
   Affected: 0
   Repartir: 0

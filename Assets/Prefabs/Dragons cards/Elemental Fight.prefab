@@ -97,7 +97,7 @@ MonoBehaviour:
   DescriptionEffects: 
   Faction: Dragons
   Type: Clima
-  Frange: 1
+  Frange: 4
   TipoFranja: Cuerpo a cuerpo
   Affected: 0
   Repartir: 0
@@ -238,7 +238,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 2848009616385085582}
           m_TargetAssemblyTypeName: CardInfo, Assembly-CSharp
-          m_MethodName: MouseEnter
+          m_MethodName: MouseExit
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
