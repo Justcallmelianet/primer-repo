@@ -93,8 +93,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: 'Elemental Fight '
-  Power: 6
-  DescriptionEffects: 
+  Power: 3
+  DescriptionEffects: Como no hay ganador en esta lucha de poderes entre el fuego
+    y agua se deciden por darle 1 punto a las cartas en la franja de asedio
   Faction: Dragons
   Type: Clima
   Frange: 4

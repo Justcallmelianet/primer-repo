@@ -94,7 +94,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Agnus
   Power: 0
-  DescriptionEffects: 
+  DescriptionEffects: Se enfurece si hay en el campo una carta con poder 5 o menos,
+    asi que cambia de lugar con ella
   Faction: Dragons
   Type: "Se\xF1uelo"
   Frange: 3

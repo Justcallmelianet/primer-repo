@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class JugarCarta : MonoBehaviour
 {
     public GameObject Card; //la carta a jugar
-    public bool Turn = true; //controlador del turno
+    public bool Turn  = true;//controlador del turno
+    public Turn turn;
     public bool jugable = true;
    //las zonas
    public GameObject PHand;
@@ -255,64 +256,38 @@ public class JugarCarta : MonoBehaviour
              jugable = false;
             }   
          }
+
+         Turn turn =GetComponent<Turn>();
     }
 
-    public void verificador()
-    {
-        position = Random.Range(0, mazo.Count);
-        if(mazo[position].GetComponent<ClaseCarta>().Repartir == false)
-        {
-            GameObject card = Instantiate(mazo[position], new Vector2(0,0), Quaternion.identity);
-            card.transform.SetParent(PHand.transform, false);
-            mazo[position].GetComponent<ClaseCarta>().Repartir = true;
-        }
-        else
-        {
-            verificador();
-        }
-    }
-     public void verificadorenemigo() 
-    {
-        position = Random.Range(0, mazoenemigo.Count);
-        if(mazoenemigo[position].GetComponent<ClaseCarta>().Repartir == false)
-        {
-            GameObject card = Instantiate(mazoenemigo[position], new Vector2(0,0), Quaternion.identity);
-            card.transform.SetParent(EHand.transform, false);
-            mazoenemigo[position].GetComponent<ClaseCarta>().Repartir = true;
-        }
-        else
-        {
-            verificadorenemigo();
-        }
-    }
-    public void NlunarGutts()
-    {
-      for(int i = 0; i < 2; i++)
-      {
-         if(mazo.Count > 2)
-         {
-            verificador();
-         }
-      }
-    }
-    public void NLunarGriffith()
-    {
-      for(int i = 0; i < 2; i++)
-      {
-         if(mazoenemigo.Count > 2)
-         {
-            verificadorenemigo();
-         }
-      }
-    }
+    
 
 
 
+    
 
+      
+    
     void Update()
+    
     {
       
       mazo = GameObject.Find("PlayerDeck").GetComponent<PDrawCards>().mazo;
       mazoenemigo = GameObject.Find("EnemyDeck").GetComponent<eDrawCards>().mazo;
+       
+       
+       void ()
+    {
+        // Verifica si puede jugar y si no ha jugado una carta
+        if (turn.canPlay && !turn.hasPlayedCard)
+        {
+            // Aquí es donde se juega la carta
+            // ...
+
+            // Establece hasPlayedCard en verdadero después de jugar una carta
+            turn.hasPlayedCard = true;
+        }
+      
+      
     }
-}
+    }}

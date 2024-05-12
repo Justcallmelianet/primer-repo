@@ -94,7 +94,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Okurle
   Power: 2
-  DescriptionEffects: 
+  DescriptionEffects: Su ojo todopoderoso y malvado le resta 1 punto a todas las
+    cartas que se envuentren en la franja de distancia.
   Faction: Dragons
   Type: Clima
   Frange: 5

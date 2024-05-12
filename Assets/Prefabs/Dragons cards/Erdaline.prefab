@@ -180,8 +180,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Erdaline
-  Power: 6
-  DescriptionEffects: 
+  Power: 4
+  DescriptionEffects: "En este cuento la princesa no esta indefensa, doma al drag\xF3n
+    que la custodia y le aumenta el poder en 2 a un drag\xF3n cualquiera del campo"
   Faction: Dragons
   Type: PLata
   Frange: 1

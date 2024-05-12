@@ -94,7 +94,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Meleys
   Power: 4
-  DescriptionEffects: 
+  DescriptionEffects: Con sus alas rotas limpia la fila del adversario con menos
+    unidades.
   Faction: Dragons
   Type: Plata
   Frange: 1

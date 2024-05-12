@@ -93,8 +93,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Belkirdon
-  Power: 4
-  DescriptionEffects: 
+  Power: 9
+  DescriptionEffects: Todos los dragones se unen para destruir una carta clima del
+    adversario.
   Faction: Dragons
   Type: Despeje
   Frange: 2

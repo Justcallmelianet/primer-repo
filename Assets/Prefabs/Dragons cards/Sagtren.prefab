@@ -93,8 +93,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Sagtren
-  Power: 2
-  DescriptionEffects: 
+  Power: 0
+  DescriptionEffects: 'Crea una niebla densa que ocupa sus manos y no puede ver a
+    quien atacar asi que escoge una carta de la mano de ambos '
   Faction: Dragons
   Type: Clima
   Frange: 6

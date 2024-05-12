@@ -93,8 +93,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Bakird
-  Power: 9
-  DescriptionEffects: 
+  Power: 7
+  DescriptionEffects: "Lanza un chillido tan agudo que aturde a la carta m\xE1s poderosa
+    del enemigo rest\xE1ndole 2 puntos de poder."
   Faction: Dragons
   Type: Oro
   Frange: 1

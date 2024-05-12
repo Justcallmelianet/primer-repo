@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 710291310618762367}
   - component: {fileID: 4232770886911775040}
   - component: {fileID: 5588660010371775854}
-  - component: {fileID: 8584766089915015374}
-  - component: {fileID: 8732746271820820925}
-  - component: {fileID: 8803618730927002377}
-  - component: {fileID: 3733890878955551707}
-  - component: {fileID: 6438121841524875744}
+  - component: {fileID: 8215246775780616791}
+  - component: {fileID: 7123185279714148778}
+  - component: {fileID: 3610856424204258202}
+  - component: {fileID: 181288578153934085}
+  - component: {fileID: 325969601952794678}
   m_Layer: 0
   m_Name: LordVictus 1
   m_TagString: Untagged
@@ -80,7 +80,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8584766089915015374
+--- !u!114 &8215246775780616791
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: LordVictus
-  Power: 3
+  Power: 6
   DescriptionEffects: 
   Faction: Dragons
   Type: Plata
@@ -102,7 +102,7 @@ MonoBehaviour:
   Affected: 0
   Repartir: 0
   Sumar: 0
---- !u!114 &8732746271820820925
+--- !u!114 &7123185279714148778
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,21 +133,7 @@ MonoBehaviour:
   eCsiege: {fileID: 0}
   Bloqueo1: {fileID: 0}
   Bloqueo2: {fileID: 0}
---- !u!114 &8803618730927002377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3877327829716733451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8da9eead1751715428e4eeee56ba7ead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Card: {fileID: 3877327829716733451}
-  InfoText: {fileID: 2841193769435030613, guid: 81c30821ef613a148bde144caf518577, type: 3}
---- !u!114 &3733890878955551707
+--- !u!114 &3610856424204258202
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,7 +177,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8732746271820820925}
+      - m_Target: {fileID: 7123185279714148778}
         m_TargetAssemblyTypeName: JugarCarta, Assembly-CSharp
         m_MethodName: PlayCard
         m_Mode: 1
@@ -203,7 +189,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6438121841524875744
+--- !u!114 &181288578153934085
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,8 +206,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 8803618730927002377}
-          m_TargetAssemblyTypeName: CardInfo, Assembly-CSharp
+        - m_Target: {fileID: 325969601952794678}
+          m_TargetAssemblyTypeName: CardInSD, Assembly-CSharp
           m_MethodName: MouseEnter
           m_Mode: 1
           m_Arguments:
@@ -236,8 +222,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 8803618730927002377}
-          m_TargetAssemblyTypeName: CardInfo, Assembly-CSharp
+        - m_Target: {fileID: 325969601952794678}
+          m_TargetAssemblyTypeName: CardInSD, Assembly-CSharp
           m_MethodName: MouseExit
           m_Mode: 1
           m_Arguments:
@@ -248,3 +234,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &325969601952794678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3877327829716733451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb08b4c2c24c2e40b39d9743e6a199a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Card: {fileID: 3877327829716733451}
+  InfoText: {fileID: 2841193769435030613, guid: 26055fee3de0fe34abb0c761883abc11, type: 3}

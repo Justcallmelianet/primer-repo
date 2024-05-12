@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 924660255750784031}
   - component: {fileID: 2727173076083283153}
   - component: {fileID: 5434026880848684084}
-  - component: {fileID: 1849228159185268629}
+  - component: {fileID: 5969375509883949463}
   m_Layer: 0
   m_Name: Lirtud
   m_TagString: Untagged
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Lirtud
-  Power: 4
+  Power: 5
   DescriptionEffects: 
   Faction: Dragons
   Type: plata
@@ -206,8 +206,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1849228159185268629}
-          m_TargetAssemblyTypeName: CardInfo, Assembly-CSharp
+        - m_Target: {fileID: 5969375509883949463}
+          m_TargetAssemblyTypeName: CardInSD, Assembly-CSharp
           m_MethodName: MouseEnter
           m_Mode: 1
           m_Arguments:
@@ -222,8 +222,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1849228159185268629}
-          m_TargetAssemblyTypeName: CardInfo, Assembly-CSharp
+        - m_Target: {fileID: 5969375509883949463}
+          m_TargetAssemblyTypeName: CardInSD, Assembly-CSharp
           m_MethodName: MouseExit
           m_Mode: 1
           m_Arguments:
@@ -234,7 +234,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1849228159185268629
+--- !u!114 &5969375509883949463
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -243,8 +243,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 8066199360224006919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8da9eead1751715428e4eeee56ba7ead, type: 3}
+  m_Script: {fileID: 11500000, guid: dbb08b4c2c24c2e40b39d9743e6a199a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Card: {fileID: 8066199360224006919}
-  InfoText: {fileID: 2841193769435030613, guid: 81c30821ef613a148bde144caf518577, type: 3}
+  InfoText: {fileID: 2841193769435030613, guid: 26055fee3de0fe34abb0c761883abc11, type: 3}
