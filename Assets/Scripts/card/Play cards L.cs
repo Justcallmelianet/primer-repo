@@ -259,32 +259,19 @@ public class JugarCarta : MonoBehaviour
 
          Turn turn =GetComponent<Turn>();
     }
-
-    
-
-
-
-    
-
-      
-    
     void Update()
     
     {
-      
-      mazo = GameObject.Find("PlayerDeck").GetComponent<PDrawCards>().mazo;
+       mazo = GameObject.Find("PlayerDeck").GetComponent<PDrawCards>().mazo;
       mazoenemigo = GameObject.Find("EnemyDeck").GetComponent<eDrawCards>().mazo;
        
-       
-       void ()
+       void  OnClicked()
     {
         // Verifica si puede jugar y si no ha jugado una carta
         if (turn.canPlay && !turn.hasPlayedCard)
         {
             // Aquí es donde se juega la carta
-            // ...
-
-            // Establece hasPlayedCard en verdadero después de jugar una carta
+         // Establece hasPlayedCard en verdadero después de jugar una carta
             turn.hasPlayedCard = true;
         }
       
